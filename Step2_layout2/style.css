@@ -3,10 +3,10 @@
     padding: 0;
 }
 
-#container{
+.container{
     background-color: red;
     width: 90% ;
-    height: 100px;
+    height: auto;
     margin: 0 auto;
     border: 1px solid black;
     max-width: 1100px;
