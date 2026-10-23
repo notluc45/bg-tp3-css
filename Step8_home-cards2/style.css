@@ -145,7 +145,7 @@ body {
 
 #bigData-intro {
   height: 350px;
-  background-image: url("../img/bigData.png");
+  background-image: url("/img/bigData.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
