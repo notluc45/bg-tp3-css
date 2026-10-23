@@ -21,7 +21,7 @@ footer {
 }
 
 .showcase {
-  background-image: url("../img/slide1.png");
+  background-image: url("/img/slide1.png");
   background-position: center top;
   background-repeat: no-repeat;
   background-size: 30%;
