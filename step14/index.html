@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+		<link rel="stylesheet" href="style.css" />
+		<title>PHP2Shell : alerte sécurité PHP</title>
+	</head>
+
+	<body>
+		<div class="container">
+			<nav class="main-nav">
+				<image src="../step14/image/Logo.jpg" alt="Logo" class="logo">
+				<ul class="main-menu">
+					<li><a href="#">Accueil</a></li>
+					<li><a href="#web">La faille</a></li>
+					<li><a href="#bigData">Correctifs</a></li>
+					<li><a href="#contact">Conseils</a></li>
+				</ul>
+				<ul class="right-menu">
+					<li>
+						<a href="#">
+							 <i class="fas fa-search"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="fas fa-shopping-cart"></i>
+						</a>
+					</li>
+				</ul>
+			</nav>
+			<header class="showcase">
+				<h2>PHP2Shell : alerte sécurité PHP</h2>
+				<p>
+					Deux failles critiques permettent d'exécuter du code à distance sur les serveurs PHP
+				</p>
+				<a href="#web" class="btn">
+					Comprendre <i class="fas fa-chevron-right"></i>
+				</a>
+			</header>
+			<main>
+				<section id="web" class="home-cards">
+					<div>
+						<image src="../step14/image/elchinator-security-5043368_1920.jpg" alt="">
+						<h3>Que s'est-il passé ?</h3>
+						<p>
+							Le 21 octobre 2026, le projet PHP a publié une mise à jour d'urgence pour corriger deux vulnérabilités critiques.
+						</p>
+						<a href="#">Lire plus<i class="fas fa-chevron-right"></i></a>
+					</div>
+					<div>
+						<image src="../step14/image/faille-php.jpg" alt="" />
+						<h3>Qui est concerné ?</h3>
+						<p>
+							Tout serveur PHP qui traite des requêtes web : PHP-FPM, Apache mod_php, php-cgi, FrankenPHP et LiteSpeed.
+						</p>
+						<a href="#">Lire plus<i class="fas fa-chevron-right"></i></a>
+					</div>
+					<div>
+						<image src="../step14/image/wavegenerics-anonymous-7722244_1920.png" alt="" />
+						<h3>Quel est le risque ?</h3>
+						<p>
+							Un attaquant non authentifié peut exécuter du code sur le serveur, y compris sur des sites WordPress, Drupal ou Joomla.
+						</p>
+						<a href="#">Lire plus<i class="fas fa-chevron-right"></i></a>
+					</div>
+					<div>
+						<image src="../step14/image/u_etaflffuni-ai-generated-8783105_1920.jpg" alt="" />
+						<h3>Comment réagir ?</h3>
+						<p>
+							Mettre à jour PHP immédiatement : modifier le code du site ne suffit pas, car la faille est dans le moteur PHP lui-même.
+						</p>
+						<a href="#">Lire plus<i class="fas fa-chevron-right"></i></a>
+					</div>
+				</section>
+				<section id="bigData-intro">
+					<div class="content">
+						<h2>Deux failles, un même danger</h2>
+						<p>
+							Les vulnérabilités CVE-2026-109618 et CVE-2026-109619 touchent la gestion de la mémoire et des erreurs de PHP.
+							Elles sont notées 9.2 sur 10 (CVSS 4.0), soit le niveau critique. Des attaques ont été signalées dès le jour de la publication.
+						</p>
+						<a href="#bigData" class="btn">
+							Voir les correctifs <i class="fas fa-chevron-right"></i>
+						</a>
+					</div>
+				</section>
+				<section id="bigData" class="home-cards">
+					<div>
+						<image src="../step14/image/chris-ried-ieic5Tq8YMk-unsplash.jpg" alt="" />
+						<h3>PHP 8.5.12</h3>
+						<p>
+							Version corrigée de la branche 8.5. À installer en priorité si votre serveur utilise PHP 8.5.
+						</p>
+						<a href="#">Lire plus<i class="fas fa-chevron-right"></i></a>
+					</div>
+					<div>
+						<image src="../step14/image/thedigitalartist-ai-generated-7957989_1920.jpg" alt="" />
+						<h3>PHP 8.4.27</h3>
+						<p>
+							Version corrigée de la branche 8.4. La mise à jour est un correctif de sécurité, sans changement de fonctionnalités.
+						</p>
+						<a href="#">Lire plus<i class="fas fa-chevron-right"></i></a>
+					</div>
+					<div>
+						<image src="../step14/image/pourquoi-les-failles-de-s-curit-php-demeurent-elles-probl-m-1792751543.jpg" alt="" />
+						<h3>PHP 8.3.36</h3>
+						<p>
+							Version corrigée de la branche 8.3. Vérifiez la version installée avec la commande php -v.
+						</p>
+						<a href="#">Lire plus<i class="fas fa-chevron-right"></i></a>
+					</div>
+					<div>
+						<image src="../step14/image/pexels-code-1839406_1920.jpg" alt="" />
+						<h3>PHP 8.2.35</h3>
+						<p>
+							Version corrigée de la branche 8.2. Les branches 8.1 et plus anciennes ne reçoivent plus de correctifs officiels.
+						</p>
+						<a href="#">Lire plus<i class="fas fa-chevron-right"></i></a>
+					</div>
+				</section>
+				<section id="contact" class="ruban dark">
+					<div class="content">
+						<h2>Les bons réflexes de sécurité</h2>
+						<p>Mettez à jour PHP et vos dépendances, inventoriez les serveurs exposés sur Internet,
+							surveillez les journaux d'accès et ne restez jamais sur une version qui n'est plus maintenue.</p>
+						<a href="#" class="btn">
+							Commencer <i class="fas fa-chevron-right"></i>
+						</a>
+					</div>
+				</section>
+				<section class="follow">
+					<p>Sources :</p>
+					<a href="https://www.php.net/">
+						<span class="fab fa-php"></span>
+					</a>
+					<a href="https://github.com">
+						<span class="fab fa-github-square"></span>
+					</a>
+					<a href="https://linkedin.com">
+						<span class="fab fa-linkedin"></span>
+					</a>
+				</section>
+			</main>
+		</div>
+		<footer>
+			<section class="links">
+				<div class="links-inner">
+					<ul>
+						<li>
+							<h3>La faille</h3>
+						</li>
+						<li><a href="#">Résumé</a></li>
+						<li><a href="#">Chronologie</a></li>
+						<li><a href="#">CVE-2026-109618</a></li>
+						<li><a href="#">CVE-2026-109619</a></li>
+						<li><a href="#">Score CVSS</a></li>
+					</ul>
+					<ul>
+						<li>
+							<h3>Versions PHP</h3>
+						</li>
+						<li><a href="#">PHP 8.5.12</a></li>
+						<li><a href="#">PHP 8.4.27</a></li>
+						<li><a href="#">PHP 8.3.36</a></li>
+						<li><a href="#">PHP 8.2.35</a></li>
+						<li><a href="#">Versions obsolètes</a></li>
+					</ul>
+					<ul>
+						<li>
+							<h3>Serveurs</h3>
+						</li>
+						<li><a href="#">PHP-FPM</a></li>
+						<li><a href="#">Apache mod_php</a></li>
+						<li><a href="#">php-cgi</a></li>
+						<li><a href="#">FrankenPHP</a></li>
+						<li><a href="#">LiteSpeed</a></li>
+					</ul>
+					<ul>
+						<li>
+							<h3>CMS touchés</h3>
+						</li>
+						<li><a href="#">WordPress</a></li>
+						<li><a href="#">Drupal</a></li>
+						<li><a href="#">Joomla</a></li>
+						<li><a href="#">Applications sur mesure</a></li>
+						<li><a href="#">Hébergeurs</a></li>
+					</ul>
+					<ul>
+						<li>
+							<h3>Se protéger</h3>
+						</li>
+						<li><a href="#">Mettre à jour PHP</a></li>
+						<li><a href="#">Inventaire des serveurs</a></li>
+						<li><a href="#">Surveillance des logs</a></li>
+						<li><a href="#">Sauvegardes</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+				</div>
+			</section>
+			<section class="sub-footer">
+				<div class="footer-inner">
+					<div><i class="fas fa-globe fa-2x"></i> Français (France)</div>
+					<ul>
+						<li><a href="#">Plan du site</a></li>
+						<li><a href="#">Confidentialité</a></li>
+						<li><a href="#">Mentions légales</a></li>
+						<li><a href="#">Sources</a></li>
+						<li><a href="#">Sécurité</a></li>
+						<li><a href="#">À propos</a></li>
+						<li><a href="#">&copy; Alerte PHP2Shell 2026</a></li>
+					</ul>
+				</div>
+			</section>
+		</footer>
+	</body>
+</html>
