@@ -21,7 +21,7 @@ footer {
 }
 
 .showcase {
-  background-image: url("/img/slide1.png");
+  background-image: url("../img/slide1.png");
   background-position: center top;
   background-repeat: no-repeat;
   background-size: 30%;
@@ -165,7 +165,7 @@ footer {
   width: 100%;
   height: 350px;
   border: 1px solid black;
-  background-image: url("/img/carbon2.jpg");
+  background-image: url("../img/carbon2.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: center top;
@@ -264,7 +264,7 @@ body {
 
 #bigData-intro {
   height: 350px;
-  background-image: url("/img/bigData.png");
+  background-image: url("../img/bigData.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
